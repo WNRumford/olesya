@@ -13,8 +13,8 @@ app = Flask(__name__)
 #     pass
 
 @app.route('/')
-def hello():
-    return '<h1>Hello! Olesya!!!</h1>'
+def main():
+    return render_template('main.html')
 
 
 if __name__ == '__main__':
