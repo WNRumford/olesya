@@ -16,6 +16,10 @@ app = Flask(__name__)
 def main():
     return render_template('main.html')
 
+@app.route('/bent')
+def bent():
+    return render_template('bent/bent.html')
+
 
 if __name__ == '__main__':
     app.run(host=host,port=port, debug=True)
