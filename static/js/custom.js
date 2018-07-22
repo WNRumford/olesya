@@ -28,9 +28,9 @@
       items:1,
       loop:true,
       dots:false,
-      autoplayHoverPause: false,
-      autoplay: true,
-      smartSpeed: 1000,
+      autoplayHoverPause: true,
+      autoplay: false,
+      smartSpeed: 10,
     })
 
     $('.owl-courses').owlCarousel({
