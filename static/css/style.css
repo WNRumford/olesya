@@ -1,0 +1,25 @@
+body,h1,h2,h3,h4,h5,h6 {
+	font-family: "Raleway", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+#logo {
+	background-color: #50b9b4;
+}
+
+.w3-bar {
+	background-color: #50b9b4;
+	color: yellow;
+}
+
+#logotip {
+	width: 40%;
+}
+
+.dogimg {
+	width: 100%;
+}
