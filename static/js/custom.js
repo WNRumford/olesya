@@ -1,4 +1,7 @@
-// menu
+// slider
+w3.slideshow(".dogimg", 3000);
+
+// mobile menu
 function myFunction() {
     var x = document.getElementById("demo");
     if (x.className.indexOf("w3-show") == -1) {
@@ -8,6 +11,8 @@ function myFunction() {
     }
 }
 
-// slideshow
-w3.slideshow(".dogimg", 3000);
-
+// Модальные картинки
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}

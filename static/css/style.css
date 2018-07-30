@@ -23,3 +23,16 @@ body, html {
 .dogimg {
 	width: 100%;
 }
+
+#addr {
+	padding-top: 60px;
+}
+
+#visit {
+	padding: 128px 16px;
+}
+
+.abjpg {
+	width: 100%;
+	cursor:pointer;
+}
