@@ -36,3 +36,27 @@ body, html {
 	width: 100%;
 	cursor:pointer;
 }
+
+.icon {
+	width: 40%;
+}
+
+.otbivka {
+	width: 10%;
+}
+
+.block {
+	margin-top: 50px;
+}
+
+.txt {
+	color: #a21a5c;
+}
+
+.iconsblock {
+	margin-top: 24px;
+}
+
+.header {
+	margin-top: 46px;
+}
