@@ -60,3 +60,14 @@ body, html {
 .header {
 	margin-top: 46px;
 }
+
+#footer {
+	background-color: #50b9b4;
+	color: yellow;
+	margin-top: 50px;
+}
+
+#demo {
+	background-color: #50b9b4;
+	color: yellow;
+}

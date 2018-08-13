@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Собственный стиль -->
 <link rel="stylesheet" href="static/css/style.css">
@@ -12,24 +13,24 @@
 <body>
 
 	<!-- menu -->
-	<div class="w3-container w3-top">
+	<div class="w3-top">
 		<div class="w3-bar w3-card w3-padding-small">
 			<div class="w3-bar-item"><i class="fa fa-phone w3-bar-item w3-large w3-btn w3-round-large w3-teal w3-ripple"></i><span class="w3-margin">+375 29 842-31-62</span></div>
 			<div class="w3-right">
-				<a href="" class="w3-bar-item w3-btn w3-hover-teal w3-mobile w3-hide-small">Ссылка</a>
-				<a href="" class="w3-bar-item w3-btn w3-hover-teal w3-mobile w3-hide-small">Ссылка</a>
-				<a href="" class="w3-bar-item w3-btn w3-hover-teal w3-mobile w3-hide-small">Ссылка</a>
-				<a href="" class="w3-bar-item w3-btn w3-hover-teal w3-mobile w3-hide-small">Ссылка</a>
+				<a href="" class="w3-bar-item w3-button w3-hover-teal w3-mobile w3-hide-small">Ссылка</a>
+				<a href="" class="w3-bar-item w3-button w3-hover-teal w3-mobile w3-hide-small">Ссылка</a>
+				<a href="" class="w3-bar-item w3-button w3-hover-teal w3-mobile w3-hide-small">Ссылка</a>
+				<a href="" class="w3-bar-item w3-button w3-hover-teal w3-mobile w3-hide-small">Ссылка</a>
 
 				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-teal w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
 			</div>
 		</div>
 
-		<div id="demo" class="w3-bar-block w3-teal w3-hide w3-hide-large w3-hide-medium">
-			  <a href="#" class="w3-bar-item w3-button w3-hover-pale-green">Ссылка</a>
-			  <a href="#" class="w3-bar-item w3-button w3-hover-pale-green">Ссылка</a>
-			  <a href="#" class="w3-bar-item w3-button w3-hover-pale-green">Ссылка</a>
-			  <a href="#" class="w3-bar-item w3-button w3-hover-pale-green">Ссылка</a>
+		<div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+			  <a href="#" class="w3-bar-item w3-button w3-hover-teal">Ссылка</a>
+			  <a href="#" class="w3-bar-item w3-button w3-hover-teal">Ссылка</a>
+			  <a href="#" class="w3-bar-item w3-button w3-hover-teal">Ссылка</a>
+			  <a href="#" class="w3-bar-item w3-button w3-hover-teal">Ссылка</a>
 		</div>
 
 	</div>
@@ -37,7 +38,7 @@
 	
 	<!-- Header -->
 	<!-- класс header задает маргин сверху в файле стилей -->
-	<header class="w3-container header">
+	<header class="header">
 		<div class="w3-row-padding w3-text-white w3-card" id="logo">
 			<div class="w3-half w3-padding-16"><img src="static/images/logo.jpg" alt="Logo" class="w3-image" style="width:40%"></div>
 			<div class="w3-half">
@@ -50,12 +51,11 @@
 	</header>
 
 	<!-- Slider -->
-	<div class="w3-container">
+	
 		<img src="static/images/img1.jpg" alt="Dog" class="w3-image w3-card dogimg">
 		<img src="static/images/img2.jpg" alt="Dog" class="w3-image w3-card dogimg">
 		<img src="static/images/img3.jpg" alt="Dog" class="w3-image w3-card dogimg">
-	</div>
-	
+		
 	<!-- services -->
 	<!-- otbivka -->
 	<div class="w3-container w3-center block" style="margin-top: 50px;">
@@ -131,9 +131,345 @@
 	<!-- otbivka -->
 	<div class="w3-container w3-center block" style="margin-top: 50px;">
 		<img src="static/images/otbivka3.jpg" class="otbivka w3-image">
-		<div class="w3-panel">
-			<b class="w3-large">Цены на услуги</b> <br>
-		</div>
+		<div class="w3-panel"><b class="w3-xlarge">Цены на услуги</b></div>
+	</div>
+
+
+	<div class="w3-container w3-responsive">
+		<table class="w3-table-all w3-large w3-hoverable">
+			<tr class="item">
+				<th class="w3-border w3-xlarge">Дополнительная услуга</th>
+				<th class="w3-border w3-xlarge">Стоимость BYN</th>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Стрижка когтей</td>
+				<td class="w3-border">2 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Вычесывание колтунов</td>
+				<td class="w3-border">5 руб./час</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Мытье шампунем и сушка</td>
+				<td class="w3-border">от 2 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Выезд на дом к клиенту (по городу)</td>
+				<td class="w3-border">3 руб.</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="w3-panel w3-center"><b class="w3-xlarge">Декоративные породы</b></div>
+
+	<!-- Фильтрация таблицы -->
+	<p class="w3-center">
+		<input oninput="w3.filterHTML('.filter', '.item', this.value)" placeholder="Начните вводить название породы" type="text">
+	</p>
+
+<!-- Таблица с ценами на породы -->
+<!-- Декоративаные -->
+	<div class="w3-responsive">
+		<table class="w3-table-all w3-large w3-hoverable filter">
+			<tr class="item">
+				<th class="w3-border">Порода</th>
+				<th class="w3-border">Стрижка</th>
+				<th class="w3-border">Мойка</th>
+			</tr>
+
+			<tr class="item">
+				<td class="w3-border">Йоркширский терьер (модельная)</td>
+				<td class="w3-border">15 руб.</td>
+				<td class="w3-border">2 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Йоркширский терьер (гигиеническая)</td>
+				<td class="w3-border">8 руб.</td>
+				<td class="w3-border">2 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Чихуа́хуа</td>
+				<td class="w3-border">20 руб.</td>
+				<td class="w3-border">2 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Мальтийская болонка</td>
+				<td class="w3-border">15 руб.</td>
+				<td class="w3-border">2 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Бишон фризе</td>
+				<td class="w3-border">20 руб.</td>
+				<td class="w3-border">2.5 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Болонез</td>
+				<td class="w3-border">15 руб.</td>
+				<td class="w3-border">2.5 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Бивер йорк</td>
+				<td class="w3-border">17 руб.</td>
+				<td class="w3-border">2.5 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Китайская хохлатая пуховка</td>
+				<td class="w3-border">17 руб.</td>
+				<td class="w3-border">2.5 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Пекинес пуховый</td>
+				<td class="w3-border">19 руб.</td>
+				<td class="w3-border">3 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Пекинес гладкошерстный</td>
+				<td class="w3-border">17 руб.</td>
+				<td class="w3-border">2.5 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Лхаса апсо</td>
+				<td class="w3-border">19 руб.</td>
+				<td class="w3-border">2.5 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Шпиц</td>
+				<td class="w3-border">19 руб.</td>
+				<td class="w3-border">2.5 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Папийон</td>
+				<td class="w3-border">15 руб.</td>
+				<td class="w3-border">2.5 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Ши-тцу</td>
+				<td class="w3-border">19 руб.</td>
+				<td class="w3-border">2.5 руб.</td>
+			</tr>
+		</table>
+	</div>
+	
+	<!-- Средние -->
+	<div class="w3-responsive">
+	<div class="w3-panel w3-center"><b class="w3-xlarge">Средние породы</b></div>
+		<table class="w3-table-all w3-large w3-hoverable filter">
+			<tr class="item">
+				<th class="w3-border">Порода</th>
+				<th class="w3-border">Стрижка</th>
+				<th class="w3-border">Мойка</th>
+			</tr>
+
+			<tr class="item">
+				<td class="w3-border">Кавалер кинг чарльз спаниель</td>
+				<td class="w3-border">17 руб.</td>
+				<td class="w3-border">2.5 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Русский спаниель (модельная)</td>
+				<td class="w3-border">25 руб.</td>
+				<td class="w3-border">2.5 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Русский спаниель (под машинку)</td>
+				<td class="w3-border">22 руб.</td>
+				<td class="w3-border">2.5 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Английский кокер спаниель (модельная)</td>
+				<td class="w3-border">25 руб.</td>
+				<td class="w3-border">2.5 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Английский кокер спаниель (под машинку)</td>
+				<td class="w3-border">22 руб.</td>
+				<td class="w3-border">2.5 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Американский кокер спаниель (модельная)</td>
+				<td class="w3-border">27 руб.</td>
+				<td class="w3-border">3 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Американский кокер спаниель (под машинку)</td>
+				<td class="w3-border">22 руб.</td>
+				<td class="w3-border">3 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Чау-чау</td>
+				<td class="w3-border">40 руб.</td>
+				<td class="w3-border">4.5 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Шелти</td>
+				<td class="w3-border">30 руб.</td>
+				<td class="w3-border">4 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Пшеничный терьер</td>
+				<td class="w3-border">35 руб.</td>
+				<td class="w3-border">4 руб.</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="w3-responsive">
+	<div class="w3-panel w3-center"><b class="w3-xlarge">Пудели</b></div>
+		<table class="w3-table-all w3-large w3-hoverable filter">
+			<tr class="item">
+				<th class="w3-border">Порода</th>
+				<th class="w3-border">Стрижка</th>
+				<th class="w3-border">Мойка</th>
+			</tr>
+
+			<tr class="item">
+				<td class="w3-border">Пудель до 35 см в холке (под машинку)</td>
+				<td class="w3-border">20 руб.</td>
+				<td class="w3-border">3 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Пудель до 35 см в холке (модельная)</td>
+				<td class="w3-border">25 руб.</td>
+				<td class="w3-border">3 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Пудель 35-40 см в холке (под машинку)</td>
+				<td class="w3-border">27 руб.</td>
+				<td class="w3-border">3 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Пудель 35-40 см в холке (модельная)</td>
+				<td class="w3-border">30 руб.</td>
+				<td class="w3-border">3 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Пудель от 45 см в холке (под машинку)</td>
+				<td class="w3-border">35 руб.</td>
+				<td class="w3-border">5 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Пудель от 45 см в холке (модельная)</td>
+				<td class="w3-border">50 руб.</td>
+				<td class="w3-border">5 руб.</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="w3-responsive">
+		<div class="w3-panel w3-center"><b class="w3-xlarge">Тримингующиеся породы</b></div>
+
+		<table class="w3-table-all w3-large w3-hoverable filter">
+			<tr class="item">
+				<th class="w3-border">Порода</th>
+				<th class="w3-border">Стрижка</th>
+				<th class="w3-border">Триминг</th>
+			</tr>
+
+			<tr class="item">
+				<td class="w3-border">Вест-хайленд-уайт</td>
+				<td class="w3-border">18 руб.</td>
+				<td class="w3-border">25руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Керн терьер</td>
+				<td class="w3-border">18 руб.</td>
+				<td class="w3-border">25 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Грифон</td>
+				<td class="w3-border">18 руб.</td>
+				<td class="w3-border">25 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Джек рассел терьер</td>
+				<td class="w3-border">18 руб.</td>
+				<td class="w3-border">25 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Скотч терьер</td>
+				<td class="w3-border">18 руб.</td>
+				<td class="w3-border">25 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Фокс терьер</td>
+				<td class="w3-border">18 руб.</td>
+				<td class="w3-border">25 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Цвергшнауцер</td>
+				<td class="w3-border">18 руб.</td>
+				<td class="w3-border">25 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Миттельшнауцер</td>
+				<td class="w3-border">25 руб.</td>
+				<td class="w3-border">40 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Ризеншнауцер</td>
+				<td class="w3-border">35 руб.</td>
+				<td class="w3-border">60 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Эрдельтерьер</td>
+				<td class="w3-border">35 руб.</td>
+				<td class="w3-border">55 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Такса жесткошерстная</td>
+				<td class="w3-border">18 руб.</td>
+				<td class="w3-border">25 руб.</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="w3-resonsive">
+		<div class="w3-panel w3-center"><b class="w3-xlarge">Метисы длинношерстные</b></div>
+
+		<table class="w3-table-all w3-large w3-hoverable filter">
+			<tr class="item">
+				<th class="w3-border">Порода</th>
+				<th class="w3-border">Стрижка</th>
+				<th class="w3-border">Триминг</th>
+			</tr>
+
+			<tr class="item">
+				<td class="w3-border">Метис (высота в холке до 35см)</td>
+				<td class="w3-border">18 руб.</td>
+				<td class="w3-border">25 руб.</td>
+			</tr>
+			<tr class="item">
+				<td class="w3-border">Метис (высота в холке 35-45 см)</td>
+				<td class="w3-border">25 руб.</td>
+				<td class="w3-border">35 руб.</td>
+			</tr>
+		</table>
+	</div>
+
+	<hr>
+
+	<!-- FAQ -->
+	<div class="w3-container w3-center">
+		<h2>Часто задаваемые вопросы</h2>
+	</div>
+		
+		<div onclick="faq('qone')" class="w3-button w3-border w3-block w3-center w3-light-grey"><i class="material-icons w3-margin-right">add</i>Сколько длится стрижка? Я успею съездить по делам?</div>
+		<div class="w3-container w3-light-grey w3-hide w3-text-indigo" id="qone">Комплекс процедур (купание, стрижка, сушка, чистка глаз и ушей, подстригание когтей) длится от 1 часа до 1,5 часов.
+		Конечно, Вы можете уехать по делам. Ничего страшного, если опоздаете: Ваш пушистый друг подождет Вас в салоне, в отдельном помещении, мы за ним присмотрим!</div>
+		
+		<div onclick="faq('qtwo')" class="w3-button w3-border w3-block w3-center w3-light-grey"><i class="material-icons w3-margin-right">add</i>Может быть удобнее вызвать мастера на дом?</div>
+		<div class="w3-container w3-light-grey w3-hide w3-text-indigo" id="qtwo"><p>Это может негативно сказаться на психологическом состоянии животного. Есть риск, что Ваш любимец потеряет ощущение «мой дом – моя крепость», начнет бояться гостей, испытывать недовольство, что его личное пространство 
+		нарушили… Опыт показал – дома собаки и кошки волнуются больше, чем в салоне. Кроме того, профессиональные грумеры в принципе не выезжают на дом, так как им требуются специальные приспособления и инструменты.</p></div>
+
+		<div onclick="faq('qthree')" class="w3-button w3-border w3-block w3-center w3-light-grey"><i class="material-icons w3-margin-right">add</i>Вдруг собака начнет нервничать. Надо ли мне ее держать?</div>
+		<div class="w3-container w3-light-grey w3-hide w3-text-indigo" id="qthree">Если у Вас собака – лучше подождите в другом помещении, мы справимся сами. Собаки спокойнее себя ведут без присутствия хозяина. Не переживайте, мы найдем подход к Вашему питомцу, успокоим его, угостим вкусным снеком!</div>
+
+	<!-- end FAQ -->
+
+	<!-- footer -->
+	<div class="w3-container" id="footer">
+		<h5>Это нижняя часть сайта (подвал)</h5>
+		<p>Здесь будет какая либо информация</p>
 	</div>
 
 <script src="static/js/custom.js"></script>

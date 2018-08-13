@@ -16,3 +16,12 @@ function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
 }
+
+function faq(id) {
+	var x = document.getElementById(id);
+	if (x.className.indexOf("w3-show") == -1) {
+		x.className += " w3-show";
+	} else {
+		x.className = x.className.replace(" w3-show", "");
+	}
+}
