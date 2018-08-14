@@ -71,3 +71,18 @@ body, html {
 	background-color: #50b9b4;
 	color: yellow;
 }
+
+.material-icons {
+	color: #50b9b4;
+}
+
+.faq {
+	color: #50b9b4;
+}
+
+.sofa {
+	width: 30%;
+	float: left;
+	margin: 10px 10px 10px 0;
+}
+
