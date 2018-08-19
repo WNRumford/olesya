@@ -16,30 +16,30 @@
 	<div class="w3-top">
 		<div class="w3-bar w3-card w3-padding-small">
 			<div class="w3-bar-item"><i class="fa fa-phone w3-bar-item w3-large w3-btn w3-round-large w3-teal w3-ripple"></i><span class="w3-margin">+375 29 842-31-62</span></div>
-			<div class="w3-right">
+			<div class="w3-right w3-border">
 				<a href="" class="w3-bar-item w3-button w3-hover-teal w3-mobile w3-hide-small">Ссылка</a>
 				<a href="" class="w3-bar-item w3-button w3-hover-teal w3-mobile w3-hide-small">Ссылка</a>
 				<a href="" class="w3-bar-item w3-button w3-hover-teal w3-mobile w3-hide-small">Ссылка</a>
 				<a href="" class="w3-bar-item w3-button w3-hover-teal w3-mobile w3-hide-small">Ссылка</a>
 
-				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-teal w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-teal w3-border w3-right w3-hide-large w3-hide-medium w3-" onclick="myFunction()">МЕНЮ</a>
 			</div>
 		</div>
 
-		<div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-card">
+
+		<div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-card w3-border">
 			  <a href="#" class="w3-bar-item w3-button w3-hover-teal">Ссылка</a>
 			  <a href="#" class="w3-bar-item w3-button w3-hover-teal">Ссылка</a>
 			  <a href="#" class="w3-bar-item w3-button w3-hover-teal">Ссылка</a>
 			  <a href="#" class="w3-bar-item w3-button w3-hover-teal">Ссылка</a>
 		</div>
-
 	</div>
 
 	
 	<!-- Header -->
 	<!-- класс header задает маргин сверху в файле стилей -->
-	<header class="header">
-		<div class="w3-row-padding w3-text-white w3-card" id="logo">
+	<header class="w3-container header">
+		<div class="w3-row-padding w3-text-white" id="logo">
 			<div class="w3-half w3-padding-16"><img src="static/images/logo.jpg" alt="Logo" class="w3-image" style="width:40%"></div>
 			<div class="w3-half">
 				<div class="w3-panel w3-padding-16 w3-xlarge" id="addr">
@@ -51,7 +51,7 @@
 	</header>
 
 	<!-- Slider -->
-	
+
 		<img src="static/images/img1.jpg" alt="Dog" class="w3-image w3-card dogimg">
 		<img src="static/images/img2.jpg" alt="Dog" class="w3-image w3-card dogimg">
 		<img src="static/images/img3.jpg" alt="Dog" class="w3-image w3-card dogimg">
@@ -95,19 +95,19 @@
 	<hr>
 
 	<div class="w3-row-padding w3-margin-top">
-				<div class="w3-half w3-mobile w3-center">
-					<img src="static/images/kupanie.jpg" class="w3-image" style="width: 40%;">
-					<div class="w3-panel">
-						<b class="w3-large w3-margin-left">Купание</b>
-					</div>
-				</div>
-				<div class="w3-half	 w3-mobile w3-center">
-					<img src="static/images/sushka.jpg" class="w3-image" style="width: 40%;">
-					<div class="w3-panel">
-						<b class="w3-large w3-margin-left">Сушка</b>
-					</div>
-				</div>
-			</div>	
+		<div class="w3-half w3-mobile w3-center">
+			<img src="static/images/kupanie.jpg" class="w3-image" style="width: 40%;">
+			<div class="w3-panel">
+				<b class="w3-large w3-margin-left">Купание</b>
+			</div>
+		</div>
+		<div class="w3-half	 w3-mobile w3-center">
+			<img src="static/images/sushka.jpg" class="w3-image" style="width: 40%;">
+			<div class="w3-panel">
+				<b class="w3-large w3-margin-left">Сушка</b>
+			</div>
+		</div>
+	</div>	
 	<hr>
 
 	<div class="w3-row-padding w3-margin-top">
@@ -163,13 +163,14 @@
 	<div class="w3-panel w3-center"><b class="w3-xlarge">Декоративные породы</b></div>
 
 	<!-- Фильтрация таблицы -->
-	<p class="w3-center">
-		<input oninput="w3.filterHTML('.filter', '.item', this.value)" placeholder="Начните вводить название породы" type="text">
-	</p>
+	<div class="w3-panel w3-center">
+		<label>Выберите свою породу</label>
+		<input class="w3-input w3-border inputfilter" oninput="w3.filterHTML('.filter', '.item', this.value)" placeholder="Начните вводить название породы" type="text">
+	</div>
 
 <!-- Таблица с ценами на породы -->
 <!-- Декоративаные -->
-	<div class="w3-responsive">
+	<div class="w3-container">
 		<table class="w3-table-all w3-large w3-hoverable filter">
 			<tr class="item">
 				<th class="w3-border">Порода</th>
@@ -248,10 +249,8 @@
 				<td class="w3-border">2.5 руб.</td>
 			</tr>
 		</table>
-	</div>
 	
 	<!-- Средние -->
-	<div class="w3-responsive">
 	<div class="w3-panel w3-center"><b class="w3-xlarge">Средние породы</b></div>
 		<table class="w3-table-all w3-large w3-hoverable filter">
 			<tr class="item">
@@ -311,9 +310,7 @@
 				<td class="w3-border">4 руб.</td>
 			</tr>
 		</table>
-	</div>
 
-	<div class="w3-responsive">
 	<div class="w3-panel w3-center"><b class="w3-xlarge">Пудели</b></div>
 		<table class="w3-table-all w3-large w3-hoverable filter">
 			<tr class="item">
@@ -353,9 +350,7 @@
 				<td class="w3-border">5 руб.</td>
 			</tr>
 		</table>
-	</div>
 
-	<div class="w3-responsive">
 		<div class="w3-panel w3-center"><b class="w3-xlarge">Тримингующиеся породы</b></div>
 
 		<table class="w3-table-all w3-large w3-hoverable filter">
@@ -421,9 +416,7 @@
 				<td class="w3-border">25 руб.</td>
 			</tr>
 		</table>
-	</div>
 
-	<div class="w3-resonsive">
 		<div class="w3-panel w3-center"><b class="w3-xlarge">Метисы длинношерстные</b></div>
 
 		<table class="w3-table-all w3-large w3-hoverable filter">
@@ -445,13 +438,11 @@
 			</tr>
 		</table>
 	</div>
-
-	<hr>
+		<hr>
 
 	<!-- FAQ -->
-	<div class="w3-container w3-center">
+	<div class="w3-container w3-center w3-mobile w3-responsive">
 		<h2>Часто задаваемые вопросы</h2>
-	</div>
 		
 		<div onclick="faq('qone')" class="w3-button w3-border w3-block w3-left-align w3-light-grey "><i class="material-icons w3-margin-right">live_help</i><b class="faq w3-large">Сколько длится стрижка? Я успею съездить по делам?</b></div>
 		<div class="w3-container w3-light-grey w3-hide" id="qone"><blockquote class="w3-panel w3-leftbar w3-light-grey"><i>Комплекс процедур (купание, стрижка, сушка, чистка глаз и ушей, подстригание когтей) длится от 1 часа до 1,5 часов.
@@ -463,7 +454,7 @@
 
 		<div onclick="faq('qthree')" class="w3-button w3-border w3-block w3-left-align w3-light-grey w3-left-align"><i class="material-icons w3-margin-right">live_help</i><b class="faq w3-large">Вдруг собака начнет нервничать. Надо ли мне ее держать?</b></div>
 		<div class="w3-container w3-light-grey w3-hide" id="qthree"><blockquote class="w3-panel w3-leftbar w3-light-grey"><i>Если у Вас собака – лучше подождите в другом помещении, мы справимся сами. Собаки спокойнее себя ведут без присутствия хозяина. Не переживайте, мы найдем подход к Вашему питомцу, успокоим его, угостим вкусным снеком!</i></blockquote ></div>
-
+	</div>
 	<!-- end FAQ -->
 	
 	<!-- about -->
@@ -472,7 +463,6 @@
 		<h4 class="w3-center" style="color:#50b9b4">Ваш мастер – <b>Шумская Олеся Владимировна</b> (грумер-универсал)</h4>
 		<div class="w3-panel">
 			<img src="static/images/sofa.jpg" class="sofa w3-round">
-			Ваш мастер – Шумская Олеся Владимировна (грумер-универсал).
 Груминг – это не роскошь, а необходимость, если Вы хотите, чтобы Ваш питомец был всегда красивым. 
 Все мы знаем, как важно обеспечить нашим питомцам качественное питание, чтобы поддерживать их здоровыми и сильными. Однако, также необходимо ухаживать за шерстью и когтями животного и проводить различные гигиенические или косметические процедуры.
  Я рада приветствовать на своем сайте своих постоянных друзей и будущих посетителей. 
@@ -484,13 +474,178 @@
 		</div>
 	</div>
 
-	<!-- end about  -->
+	<!-- end about -->
 
+<!-- adventage -->
+<hr>
+
+	<div class="w3-container w3-center block" style="margin-top: 50px;">
+		<div class="w3-panel">
+			<h2 style="color: #50b9b4;" >Наши преимущества</h2>
+			<img src="static/images/otbivka5.jpg" alt="otbivka" class="otbivka w3-image">
+			<p><b style="color: #50b9b4;" class="w3-xlarge">4 причины, почему Вы и Ваш питомец останетесь довольны</b></p>
+		</div>
+	</div>
+
+	<div class="w3-container">
+		
+	<div class="w3-row-padding w3-margin-top">
+
+		<div class="w3-quarter w3-mobile w3-center">
+			<img src="static/images/kosmetica.jpg" class="w3-image" style="width: 50%;">
+			<div class="w3-panel">
+				<b class="w3-large w3-margin-left">Профессиональная косметика</b>
+			</div>
+			<div class="w3-panel">
+				Мы исполдьзуем только проф. косметику, которая подходит имеено Вашему питомцу
+			</div>
+		</div>
+
+		<div class="w3-quarter w3-mobile w3-center">
+			<img src="static/images/prof.jpg" class="w3-image" style="width: 50%;">
+			<div class="w3-panel">
+				<b class="w3-large w3-margin-left">Опытный грумер</b>
+			</div>
+			<div class="w3-panel">работает только опытный грумер, который имеет большой опыт работы с животными</div>
+		</div>
+
+		<div class="w3-quarter w3-mobile w3-center">
+			<img src="static/images/tools.jpg" class="w3-image" style="width: 50%;">
+			<div class="w3-panel">
+				<b class="w3-large w3-margin-left">Профессиональный инструмент</b>
+			</div>
+			<div class="w3-panel">
+				все проедуры выполняются только профессиональным инструметом от ведущих мировых производителей
+			</div>
+		</div>
+
+		<div class="w3-quarter w3-mobile w3-center">
+			<img src="static/images/krest.jpg" class="w3-image" style="width: 50%;">
+			<div class="w3-panel">
+				<b class="w3-large w3-margin-left">Никаких уколов</b>
+			</div>
+			<div class="w3-panel">все процедуры производятся без приминения наркоза и других препаратов</div>
+		</div>
+
+	</div>	
+
+	</div>
+
+<hr>
+
+<!-- ENDadventage -->
+
+<!-- Gallery -->
+
+<div class="w3-container">
+
+<div class="w3-center"><h2>Галлерея наших работ</h2></div>
+<div class="w3-row-padding" style="margin:0 -16px">
+  <div class="w3-col s4">
+    <img src="static/images/col5.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal();currentDiv(1)" class="w3-hover-shadow">
+  </div>
+  <div class="w3-col s4">
+    <img src="static/images/col4.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal();currentDiv(2)" class="w3-hover-shadow">
+  </div>
+  <div class="w3-col s4">
+    <img src="static/images/col6.jpg" style="width:100%;cursor:pointer"
+    onclick="openModal();currentDiv(3)" class="w3-hover-shadow">
+  </div>
+</div>
+
+<div id="myModal" class="w3-modal w3-black">
+ <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal()" style="cursor:pointer">×</span>
+ <div class="w3-modal-content">
+
+  <div class="w3-content" style="max-width:1200px">
+   <img class="mySlides" src="static/images/col5.jpg" style="width:100%">
+   <img class="mySlides" src="static/images/col4.jpg" style="width:100%">
+   <img class="mySlides" src="static/images/col6.jpg" style="width:100%">
+   <div class="w3-row w3-black w3-center">
+    <div class="w3-display-container">
+     <p id="caption"></p>
+     <span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
+     <span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
+    </div>
+    <div class="w3-col s4">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="static/images/col5.jpg" style="width:100%" onclick="currentDiv(1)" alt="Nature and sunrise">
+    </div>
+    <div class="w3-col s4">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="static/images/col4.jpg" style="width:100%" onclick="currentDiv(2)" alt="French Alps">
+    </div>
+    <div class="w3-col s4">
+     <img class="demo w3-opacity w3-hover-opacity-off" src="static/images/col6.jpg" style="width:100%" onclick="currentDiv(3)" alt="Mountains and fjords">
+    </div>
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->
+
+</div>
+
+<!-- ENDGallery -->
+
+<!-- Form -->
+
+<form action="" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin myform">
+<h2 class="w3-center">Форма обратной связи</h2>
+ 
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="first" type="text" placeholder="Ваше имя">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-paw"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="first" type="text" placeholder="Порода Вашей собаки">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="email" type="text" placeholder="Ваш Email">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="phone" type="text" placeholder="Ваш телефон">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+    <div class="w3-rest">
+    <textarea class="w3-input w3-border" placeholder="Введите Ваше сообщение" rows="5"></textarea>
+    </div>
+</div>
+
+<button class="w3-button w3-block w3-section w3-ripple w3-hover-teal w3-padding" style="background-color: #50b9b4; color: yellow;">Отправить</button>
+
+</form>
+
+<!-- ENDForm -->
 	<!-- footer -->
 	<div class="w3-container" id="footer">
 		<h5>Это нижняя часть сайта (подвал)</h5>
 		<p>Здесь будет какая либо информация</p>
 	</div>
+
+	<!-- мы исполдьзуем только проф. косметику, к-рая подходит имеено вашему питомцу -->
+
+	<!-- работает только опытный грумер, который имеет большой опыт работы с животными -->
+
+	<!-- все проедуры выполняются только профессиональным инструметом от ведущих мировых производителей -->
+
+	<!-- все процедуры производятся без приминения наркоза и других препаратов -->
 
 <script src="static/js/custom.js"></script>
 <!-- #a21a5c -->
