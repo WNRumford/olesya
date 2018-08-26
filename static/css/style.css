@@ -16,6 +16,15 @@ body, html {
 	color: yellow;
 }
 
+.headergrid {
+	width: 25%;
+	height: 200px;
+	/*border: 1px solid #000;*/*/
+}
+.headerthird {
+	width: 50%;
+}
+
 #logotip {
 	width: 40%;
 }
@@ -25,7 +34,21 @@ body, html {
 }
 
 #addr {
-	padding-top: 60px;
+	padding-top: 25px;
+	font-size: 19px;
+	line-height: 120%;
+}
+
+#go {
+	padding-top: 25px;
+	font-size: 19px;
+	line-height: 120%;
+	text-align: right;
+}
+
+#btngo {
+	width: 92%;
+	margin-top: 30px;
 }
 
 #visit {
@@ -59,7 +82,6 @@ body, html {
 
 .header {
 	background-color: #50b9b4;
-	margin-top: 46px;
 }
 
 #footer {
@@ -98,4 +120,11 @@ body, html {
 
 .myform > * {
 	color: #50b9b4;
+}
+
+/*sticky navbar*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
