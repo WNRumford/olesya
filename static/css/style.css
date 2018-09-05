@@ -46,7 +46,7 @@ body, html {
 }
 
 .otbivka {
-	width: 10%;
+	width: 5%;
 }
 
 .block {
@@ -119,6 +119,22 @@ body, html {
 	width: 60%;
 }
 
-.social{
-	color: white;
+.tel {
+	font-family: 'Geneva', Arial, Helvetica, sans-serif;
+}
+
+
+.block {
+	margin-top: 40px;
+}
+
+
+.outbd {
+	border-bottom: 16px solid #50b9b4;
+	margin-top: 40px;
+	margin-bottom: 0px;
+}
+
+.insidebd {
+	border-bottom: 8px solid #a21a5c;
 }
