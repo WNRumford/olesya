@@ -32,6 +32,8 @@
 		</div>
 	</header> -->
 
+<!-- <a href="tel:+7 (4012) 52 44 07">+7 (4012) 52 44 07</a> -->
+
 	<header class="header w3-cell-row w3-border-bottom">
 		<div class="w3-container w3-cell w3-cell-middle w3-mobile w3-center">
 			<img src="static/images/logo1.jpg" alt="Logo" class="" style="width:60%; padding: 5px;">
@@ -70,7 +72,7 @@
 	<!-- menu -->
 	<div class="w3-card" id="navbar">
 		<div class="w3-bar w3-card w3-padding-small">
-			<div class="w3-bar-item"><i class="fa fa-phone w3-bar-item w3-large w3-button w3-round-large w3-teal w3-ripple"></i><span class="w3-margin tel">+375 29 842-31-62</span></div>
+			<div class="w3-bar-item"><a href="tel:+375 29 842-31-62"><i class="fa fa-phone w3-bar-item w3-large w3-button w3-round-large w3-teal w3-ripple"></i></a><span class="w3-margin tel">+375 29 842-31-62</span></div>
 			<div class="w3-right w3-border">
 				<a href="#about" class="w3-bar-item w3-button w3-mobile w3-hide-small">Обо мне</a>
 				<a href="#prices" class="w3-bar-item w3-button w3-mobile w3-hide-small">Цены</a>
@@ -209,6 +211,22 @@
 
 
 	<div class="w3-container w3-responsive">
+		
+	</div>
+
+	<p class="w3-padding w3-center"><button onclick="showPrice('price')" class="w3-button w3-xlarge w3-round-large w3-ripple w3-teal">Узнать цены</button></p>
+
+<!-- Таблица с ценами на породы -->
+<!-- Декоративаные -->
+<!-- класс price для аккардиона -->
+	<div class="w3-container w3-hide" id="price">
+		<!-- Фильтрация таблицы -->
+		<div class="w3-panel w3-center">
+			<label>Выберите свою породу</label>
+			<input class="w3-input w3-border inputfilter" oninput="w3.filterHTML('.filter', '.item', this.value)" placeholder="Начните вводить название породы" type="text">
+		</div>
+
+		
 		<table class="mw w3-table-all w3-large w3-hoverable">
 			<tr class="item">
 				<th class="w3-border w3-xlarge">Дополнительные услуги</th>
@@ -235,20 +253,10 @@
 				<td class="w3-border">3 руб.</td>
 			</tr>
 		</table>
-	</div>
 
-	<p class="w3-padding w3-center"><button onclick="showPrice('price')" class="w3-button w3-xlarge w3-round-large w3-ripple w3-teal">Узнать цены</button></p>
-
-<!-- Таблица с ценами на породы -->
-<!-- Декоративаные -->
-<!-- класс price для аккардиона -->
-	<div class="w3-container w3-hide" id="price">
-		<!-- Фильтрация таблицы -->
-		<div class="w3-panel w3-center">
-			<label>Выберите свою породу</label>
-			<input class="w3-input w3-border inputfilter" oninput="w3.filterHTML('.filter', '.item', this.value)" placeholder="Начните вводить название породы" type="text">
-		</div>
 			<div class="w3-panel w3-center"><b class="w3-xlarge">Декоративные породы</b></div>
+
+
 
 		<table class="mw w3-table-all w3-large w3-hoverable filter">
 			<tr class="item">
