@@ -12,9 +12,17 @@ app = Flask(__name__)
 # def land():
 #     pass
 
-@app.route('/')
+@app.route('/', methods = ['GET', 'POST'])
+@app.route('/main', methods = ['GET', 'POST'])
 def main():
-    return render_template('index.html')
+    if request.method == 'POST':
+        name = request.form['name']
+        dog = request.form['dog']
+        email = request.form['email']
+        phone = request.form['phone']
+        msg = request.form['msg']
+        error = None
+    return render_template('index.html', form_dict=request.form)
 
 
 
