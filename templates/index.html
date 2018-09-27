@@ -720,8 +720,10 @@
 
 </form>
 
-<div class="w3-panel w3-border w3-red">
-	<p>{{ form_dict }}</p>
+<div class="w3-panel w3-center w3-border w3-black w3-text-yellow">
+	{% for i in arr %}
+	<p>{{i}}</p>
+	{% endfor %}
 </div>
 
 <!-- ENDForm -->

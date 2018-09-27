@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, url_for
+from flask import Flask, render_template, request, url_for, redirect
+from funcs import get_data_form, write_json
 import os
 
 host = os.getenv('IP', '0,0,0,0')
@@ -16,15 +17,13 @@ app = Flask(__name__)
 @app.route('/main', methods = ['GET', 'POST'])
 def main():
     if request.method == 'POST':
-        name = request.form['name']
-        dog = request.form['dog']
-        email = request.form['email']
-        phone = request.form['phone']
-        msg = request.form['msg']
-        error = None
-    return render_template('index.html', form_dict=request.form)
+        write_json(get_data_form())
+        redirect('index.html')
+    return render_template('index.html')
 
-
+@app.errorhandler(404)
+def page_not_found(e):
+    return "Ошибка, ошибка!!! <hr> {} <hr> <a href='{}'><h1>Back to main</h1>".format(e, url_for("main")), 404
 
 if __name__ == '__main__':
     app.run(host=host,port=port, debug=True)
