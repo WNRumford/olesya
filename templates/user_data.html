@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Пользовательские данные</title>
+</head>
+<body class="w3-pale-blue">
+    <div class="w3-container w3-blue w3-center">
+        <h1>Данные, которые оставили клиенты</h1>
+    </div>
+    
+    <div class="w3-container">
+        {% for user in data %}
+        <table class="w3-table-all w3-card-4 w3-center" style="margin-top:40px;
+                            margin-left:50px;width:90%">
+            <tr>
+                <th>Поле формы</th>
+                <th>Что получено</th>
+            </tr>
+            <tr>
+                <td>Дата</td>
+                <td>{{ user["current"] }}</td>
+            </tr>
+            <tr>
+                <td>Имя</td>
+                <td>{{ user["name"] }}</td>
+            </tr>
+            <tr>
+                <td>Порода</td>
+                <td>{{ user["dog"] }}</td>
+            </tr>
+            <tr>
+                <td>Эмаил</td>
+                <td>{{ user["email"] }}</td>
+            </tr>
+            <tr>
+                <td>Телефон</td>
+                <td>{{ user["phone"] }}</td>
+            </tr>
+            <tr>
+                <td>Сообщение</td>
+                <td>{{ user["msg"] }}</td>
+            </tr>
+        </table>
+        
+        {% endfor %}
+    </div>
+    
+    <div class="w3-container w3-blue" style="margin-top:50px">
+        <h2>it will be menu in this place, capable.</h2>
+        <p class="w3-center"><a href="{{url_for('main')}}" class="w3-button w3-red">Вернуться на сайт</a></p>
+    </div>
+</body>
+</html>

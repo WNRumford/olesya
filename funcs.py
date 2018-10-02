@@ -36,3 +36,12 @@ def write_json(d):
         json.dump(data, file, indent=2, ensure_ascii=False)
 
 
+# чтение данных из json файла
+def read_json(file):
+    if file:
+        with open(file, "r") as f:
+            user_data = json.load(f)
+        return user_data
+    else:
+        return "Данных нету"
+
