@@ -45,3 +45,7 @@ def read_json(file):
     else:
         return "Данных нету"
 
+# Принимаем и проверяем пароль, возвращаем boolean
+def get_check_psw():
+    return request.form['psw'] == 'qwaqwa'
+
