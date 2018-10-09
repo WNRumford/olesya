@@ -15,13 +15,18 @@ def get_data_form():
     email = request.form['email']
     phone = request.form['phone']
     msg = request.form['msg']
-    error = None
     current = current_date()
     return {'name':name, 'dog':dog, 
             'email':email, 'phone':phone, 
-            'msg':msg, 'error':error,
-            "current":current}
+            'msg':msg, "current":current}
 
+# создание тела письма
+def letter(d):
+    msg = ''
+    for k,v in d.items():
+        msg = msg + '{} --> {}; \n'.format(k, v)
+    return msg
+    
 # Запись данных в json файл
 def write_json(d):
     
