@@ -36,7 +36,7 @@ def main():
         msg = Message('Письмо с сайта', recipients = ['shumskayaolesya59@gmail.com'])
         msg.body = letter(data)
         mail.send(msg)
-    return render_template('index.html', data=str(data))
+    return render_template('index.html')
 
 
 @app.errorhandler(404)
