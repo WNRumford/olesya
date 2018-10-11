@@ -3,6 +3,7 @@ certifi==2018.8.24
 click==6.7
 Flask==1.0.2
 Flask-Mail==0.9.1
+gunicorn==19.9.0
 itsdangerous==0.24
 Jinja2==2.10
 MarkupSafe==1.0
