@@ -1,1 +1,1 @@
-web gunicorn olesya:app
+web gunicorn main:app
