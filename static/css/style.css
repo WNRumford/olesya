@@ -107,9 +107,12 @@ body, html {
 .myform > * {
 	color: #50b9b4;
 }
+#navbar{
+	overflow: hidden;
+}
 
 /*sticky navbar*/
-.sticky {
+.stickyy {
   position: fixed;
   top: 0;
   width: 100%;
