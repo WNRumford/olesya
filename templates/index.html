@@ -605,23 +605,6 @@
 	<p><b class="w3-large w3-margin-left">Здесь Вы можете увидеть мои работы</b></p>
 </div>
 
-<div class="w3-content" style="max-width: 800px;">
-	{% for i in range(1,16) %}
-	<img src="static/images/gal{{i}}.jpg" alt="Фото собачки" class="gal" style="width:100%">
-	{% endfor %}
-</div>
-
-<div class="w3-center">
-	<div class="w3-section">
-		<button class="w3-button w3-teal" onclick="plusDivs(-1)">❮ Назад</button>
-    	<button class="w3-button w3-teal" onclick="plusDivs(1)">Вперёд ❯</button>
-   </div>
-   {% for i in range(1,16) %}
-   <button class="w3-button w3-border w3-teal showgal" onclick="currentDiv({{i}})">{{i}}</button> 
-   {% endfor %}
-</div>
-
-
 <!-- ENDGallery -->
 
 <!-- Form -->
