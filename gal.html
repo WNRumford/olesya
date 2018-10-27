@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>Gal</title>
+</head>
+<body>
+	<div class="w3-container w3-padding">
+		<div class="w3-row-padding">
+
+			<!-- decor -->
+			<div class="w3-col s4">
+				<img src="img/decor1.jpg" alt="decor" style="width:100%;cursor:pointer" onclick="openModalDecor();currentDivDecor(1)" class="w3-image w3-hover-shadow">
+			</div>
+			
+			<!-- mid -->
+			<div class="w3-col s4">
+				<img src="img/mid1.jpg" alt="Mid" style="width:100%;cursor:pointer" onclick="openModalMid();currentDivMid(1)" class="w3-image w3-hover-shadow">
+			</div>
+
+			<!-- <div class="w3-col s4">
+				<img src="img/decor1.jpg" alt="decor" style="width:100%;cursor:pointer" onclick="openModal();currentDiv(1)" class="w3-image w3-hover-shadow">
+			</div> -->
+
+		</div>
+	</div>
+<!-- decor -->
+<div id="myModalDecor" class="w3-modal w3-grey">
+ <span class="w3-text-red w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModalDecor()" style="cursor:pointer">×</span>
+ <div class="w3-modal-content">
+
+  <div class="w3-content" style="max-width:1100px">
+
+   <img class="decor" src="img/decor1.jpg" style="width:100%">
+   <img class="decor" src="img/decor1.jpg" style="width:100%">
+   <img class="decor" src="img/decor1.jpg" style="width:100%">
+   <img class="decor" src="img/decor1.jpg" style="width:100%">
+   <img class="decor" src="img/decor1.jpg" style="width:100%">
+
+   <div class="w3-row w3-teal w3-center">
+	<div class="w3-center w3-padding">
+	  <div class="w3-section">
+	    <button class="w3-button w3-light-grey" onclick="plusDivsDecor(-1)">❮ Prev</button>
+	    <button class="w3-button w3-light-grey" onclick="plusDivsDecor(1)">Next ❯</button>
+	  </div>
+	  <button class="w3-button bdecor w3-border" onclick="currentDivDecor(1)">1</button> 
+	  <button class="w3-button bdecor w3-border" onclick="currentDivDecor(2)">2</button> 
+	  <button class="w3-button bdecor w3-border" onclick="currentDivDecor(3)">3</button> 
+	  <button class="w3-button bdecor w3-border" onclick="currentDivDecor(4)">4</button> 
+	  <button class="w3-button bdecor w3-border" onclick="currentDivDecor(5)">5</button> 
+	</div>
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->
+
+<!-- Middle -->
+<div id="myModalMid" class="w3-modal w3-grey">
+ <span class="w3-text-red w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModalMid()" style="cursor:pointer">×</span>
+ <div class="w3-modal-content">
+
+  <div class="w3-content" style="max-width:1100px">
+
+   <img class="mid" src="img/mid1.jpg" style="width:100%">
+   <img class="mid" src="img/mid1.jpg" style="width:100%">
+   <img class="mid" src="img/mid1.jpg" style="width:100%">
+   <img class="mid" src="img/mid1.jpg" style="width:100%">
+   <img class="mid" src="img/mid1.jpg" style="width:100%">
+
+   <div class="w3-row w3-teal w3-center">
+	<div class="w3-center w3-padding">
+	  <div class="w3-section">
+	    <button class="w3-button w3-light-grey" onclick="plusDivsMid(-1)">❮ Prev</button>
+	    <button class="w3-button w3-light-grey" onclick="plusDivsMid(1)">Next ❯</button>
+	  </div>
+	  <button class="w3-button bmid w3-border" onclick="currentDivMid(1)">1</button> 
+	  <button class="w3-button bmid w3-border" onclick="currentDivMid(2)">2</button> 
+	  <button class="w3-button bmid w3-border" onclick="currentDivMid(3)">3</button> 
+	  <button class="w3-button bmid w3-border" onclick="currentDivMid(4)">4</button> 
+	  <button class="w3-button bmid w3-border" onclick="currentDivMid(5)">5</button> 
+	</div>
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->
+
+<script>
+// decor
+function openModalDecor() {
+  document.getElementById('myModalDecor').style.display = "block";
+}
+
+function closeModalDecor() {
+  document.getElementById('myModalDecor').style.display = "none";
+}
+
+var slideIndexDecor = 1;
+showDivsDecor(slideIndexDecor);
+
+
+function plusDivsDecor(n) {
+  showDivsDecor(slideIndexDecor += n);
+}
+
+function currentDivDecor(n) {
+  showDivsDecor(slideIndexDecor = n);
+}
+
+function showDivsDecor(n) {
+  var i;
+  var x = document.getElementsByClassName("decor");
+  var dots = document.getElementsByClassName("bdecor");
+  if (n > x.length) {slideIndexDecor = 1}
+  if (n < 1) {slideIndexDecor = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-yellow", "");
+
+  }
+  x[slideIndexDecor-1].style.display = "block";
+  dots[slideIndexDecor-1].className += " w3-yellow";
+}
+
+// mid
+function openModalMid() {
+  document.getElementById('myModalMid').style.display = "block";
+}
+
+function closeModalMid() {
+  document.getElementById('myModalMid').style.display = "none";
+}
+
+var slideIndexMid = 1;
+showDivsMid(slideIndexMid);
+
+
+function plusDivsMid(n) {
+  showDivsMid(slideIndexMid += n);
+}
+
+function currentDivMid(n) {
+  showDivsMid(slideIndexMid = n);
+}
+
+function showDivsMid(n) {
+  var i;
+  var x = document.getElementsByClassName("mid");
+  var dots = document.getElementsByClassName("bmid");
+  if (n > x.length) {slideIndexMid = 1}
+  if (n < 1) {slideIndexMid = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-yellow", "");
+
+  }
+  x[slideIndexMid-1].style.display = "block";
+  dots[slideIndexMid-1].className += " w3-yellow";
+}
+
+</script>
+
+</body>
+</html>
