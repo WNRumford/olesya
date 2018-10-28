@@ -86,20 +86,6 @@
 		<img src="static/images/otbivka7.jpg" class="otbivka w3-image">
 	</div>
 
-<!--	<div class="w3-container block"> -->
-<!--		<h3 class="w3-center" style="color:#a21a5c"><b>ВАШ МАСТЕР – ШУМСКАЯ ОЛЕСЯ ВЛАДИМИРОВНА (грумер-универсал)</b></h3>-->
-<!--		<div class="w3-panel w3-large textsofa">-->
-			<!-- <img src="static/images/sofa.jpg" class="sofa w3-round"> -->
-<!--<div class="textsofaindent">Груминг – это не роскошь, а необходимость, если Вы хотите, чтобы Ваш питомец был всегда красивым.</div><img src="static/images/sofa.jpg" class="sofa w3-round w3-mobile">-->
-<!--<div class="textsofaindent"> Все мы знаем, как важно обеспечить нашим питомцам качественное питание, чтобы поддерживать их здоровыми и сильными. Однако, также необходимо ухаживать за шерстью и когтями животного и проводить различные гигиенические или косметические процедуры.</div>-->
-<!--<div class="textsofaindent"> Я рада приветствовать на своем сайте своих постоянных друзей и будущих посетителей. -->
-<!--Моя работа с собаками в качестве грумера составляет более восьми лет. Желание создавать красоту, является основным мотивом моей работы.</div>-->
-<!--<div class="textsofaindent"> Я знаю, каким трудным может быть выбор грумера, который вам подойдет. Вот по этой причине в моей Зоостудии я отношусь к животным с заботой и добротой, терпением и уважением, но, прежде всего, приоритетом моей работы является забота о безопасности вашего питомца, здоровье и благополучие.-->
-<!--Основными принципами в моей работе являются: понимание психологии животного, бережный подход и выполнения эстетических пожеланий хозяина. Индивидуальный подход к каждому питомцу, предоставление удобного для вас времени, демократические цены, которые позволят проводить регулярный уход.</div>-->
-<!--<div class="textsofaindent"> Работая с разными породами собак, применяю профессиональную косметику. Максимально качественно подбираю косметику с учетом породных особенностей и состояния шерсти вашего питомца.</div> -->
-<!--<div class="textsofaindent">Я стремлюсь к постоянному развитию и совершенствованию моих умений и навыков в области профессионального груминга. Для этого постоянно выезжаю на мастер-классы с целью повышения квалификации по отдельным породам собак, с участием профессиональных грумеров России и Европы. Участвую в выставках собак, помогаю своим клиентам в качестве грумера.</div>-->
-<!--		</div>-->
-<!--	</div>-->
 
 <div class="w3-container w3-center w3-padding-32">
     <h3 style="color:#a21a5c"><b>Обо мне</b></h3>
@@ -180,6 +166,63 @@
 	<!-- end about -->
 	<!-- services -->
 	<!-- otbivka -->
+	<div class="outbd">
+		<div class="insidebd"></div>	
+	</div>
+	<!--Gallery-->
+	<div class="w3-container w3-padding w3-center">
+		 <h3 style="color:#a21a5c"><b>Галлерея моих работ</b></h3>
+		<div class="w3-row-padding">
+
+			<!-- decor -->
+			<div class="w3-col s3">
+				<img src="static/images/dec1.jpg" alt="decor" style="width:100%;cursor:pointer" onclick="openModalDecor();currentDivDecor(1)" class="w3-image w3-hover-shadow">
+			</div>
+			
+			<!-- mid -->
+			<div class="w3-col s3">
+				<img src="static/images/mid1.jpg" alt="Mid" style="width:100%;cursor:pointer" onclick="openModalMid();currentDivMid(1)" class="w3-image w3-hover-shadow">
+			</div>
+			
+			<!--met-->
+			<div class="w3-col s3">
+				<img src="static/images/met1.jpg" alt="decor" style="width:100%;cursor:pointer" onclick="openModal();currentDiv(1)" class="w3-image w3-hover-shadow">
+			</div>
+			
+			<!--trim-->
+			<div class="w3-col s3">
+				<img src="static/images/trim1.jpg" alt="decor" style="width:100%;cursor:pointer" onclick="openModal();currentDiv(1)" class="w3-image w3-hover-shadow">
+			</div>
+
+		</div>
+	</div>
+	
+<div id="myModalDecor" class="w3-modal w3-grey">
+ <span class="w3-text-red w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModalDecor()" style="cursor:pointer">×</span>
+ <div class="w3-modal-content">
+
+  <div class="w3-content" style="max-width:1100px">
+	
+	{% for i in range(1,22) %}
+   <img class="dec" src="static/images/dec{{i}}.jpg" style="width:100%">
+   {% endfor %} 
+   <div class="w3-row w3-teal w3-center">
+	<div class="w3-center w3-padding">
+	  <div class="w3-section">
+	    <button class="w3-button w3-light-grey" onclick="plusDivsDecor(-1)">❮ Prev</button>
+	    <button class="w3-button w3-light-grey" onclick="plusDivsDecor(1)">Next ❯</button>
+	  </div>
+	  {% for i in range(1,22) %}
+	  <button class="w3-button bdecor w3-border" onclick="currentDivDecor({{i}})">{{i}}</button> 
+	  {% endfor %}
+	</div>
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->
+	
+	<!--end Gall-->
 	<div class="outbd">
 		<div class="insidebd"></div>	
 	</div>
@@ -764,7 +807,7 @@
 	</div>
 
 <script src="static/js/custom.js"></script>
-<script src="static/js/gallery.js"></script>
+<script src="static/js/gall.js"></script>
 <!-- #a21a5c -->
 </body>
 </html>
