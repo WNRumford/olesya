@@ -186,17 +186,18 @@
 			
 			<!--met-->
 			<div class="w3-col s3">
-				<img src="static/images/met1.jpg" alt="decor" style="width:100%;cursor:pointer" onclick="openModal();currentDiv(1)" class="w3-image w3-hover-shadow">
+				<img src="static/images/met1.jpg" alt="decor" style="width:100%;cursor:pointer" onclick="openModalMet();currentDivMet(1)" class="w3-image w3-hover-shadow">
 			</div>
 			
 			<!--trim-->
 			<div class="w3-col s3">
-				<img src="static/images/trim1.jpg" alt="decor" style="width:100%;cursor:pointer" onclick="openModal();currentDiv(1)" class="w3-image w3-hover-shadow">
+				<img src="static/images/trim1.jpg" alt="decor" style="width:100%;cursor:pointer" onclick="openModalTrim();currentDivTrim(1)" class="w3-image w3-hover-shadow">
 			</div>
 
 		</div>
 	</div>
 	
+	<!--decor-->
 <div id="myModalDecor" class="w3-modal w3-grey">
  <span class="w3-text-red w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModalDecor()" style="cursor:pointer">×</span>
  <div class="w3-modal-content">
@@ -221,8 +222,87 @@
   
  </div> <!-- End modal content -->
 </div> <!-- End modal -->
+
+	<!--Mid-->
+<div id="myModalMid" class="w3-modal w3-grey">
+ <span class="w3-text-red w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModalMid()" style="cursor:pointer">×</span>
+ <div class="w3-modal-content">
+
+  <div class="w3-content" style="max-width:1100px">
 	
+	{% for i in range(1,2) %}
+   <img class="mid" src="static/images/mid{{i}}.jpg" style="width:100%">
+   {% endfor %} 
+   <div class="w3-row w3-teal w3-center">
+	<div class="w3-center w3-padding">
+	  <div class="w3-section">
+	    <button class="w3-button w3-light-grey" onclick="plusDivsMid(-1)">❮ Prev</button>
+	    <button class="w3-button w3-light-grey" onclick="plusDivsMid(1)">Next ❯</button>
+	  </div>
+	  {% for i in range(1,2) %}
+	  <button class="w3-button bmid w3-border" onclick="currentDivMid({{i}})">{{i}}</button> 
+	  {% endfor %}
+	</div>
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->
+
+	<!--Met-->
+<div id="myModalMet" class="w3-modal w3-grey">
+ <span class="w3-text-red w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModalMet()" style="cursor:pointer">×</span>
+ <div class="w3-modal-content">
+
+  <div class="w3-content" style="max-width:1100px">
+	
+	{% for i in range(1,3) %}
+   <img class="met" src="static/images/met{{i}}.jpg" style="width:100%">
+   {% endfor %} 
+   <div class="w3-row w3-teal w3-center">
+	<div class="w3-center w3-padding">
+	  <div class="w3-section">
+	    <button class="w3-button w3-light-grey" onclick="plusDivsMet(-1)">❮ Prev</button>
+	    <button class="w3-button w3-light-grey" onclick="plusDivsMet(1)">Next ❯</button>
+	  </div>
+	  {% for i in range(1,3) %}
+	  <button class="w3-button bmet w3-border" onclick="currentDivMet({{i}})">{{i}}</button> 
+	  {% endfor %}
+	</div>
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->	
+
+	<!--Trim-->
+<div id="myModalTrim" class="w3-modal w3-grey">
+ <span class="w3-text-red w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModalTrim()" style="cursor:pointer">×</span>
+ <div class="w3-modal-content">
+
+  <div class="w3-content" style="max-width:1100px">
+	
+	{% for i in range(1,5) %}
+   <img class="trim" src="static/images/trim{{i}}.jpg" style="width:100%">
+   {% endfor %} 
+   <div class="w3-row w3-teal w3-center">
+	<div class="w3-center w3-padding">
+	  <div class="w3-section">
+	    <button class="w3-button w3-light-grey" onclick="plusDivsTrim(-1)">❮ Prev</button>
+	    <button class="w3-button w3-light-grey" onclick="plusDivsTrim(1)">Next ❯</button>
+	  </div>
+	  {% for i in range(1,5) %}
+	  <button class="w3-button btrim w3-border" onclick="currentDivTrim({{i}})">{{i}}</button> 
+	  {% endfor %}
+	</div>
+   </div> <!-- End row -->
+  </div> <!-- End w3-content -->
+  
+ </div> <!-- End modal content -->
+</div> <!-- End modal -->
+
 	<!--end Gall-->
+	
 	<div class="outbd">
 		<div class="insidebd"></div>	
 	</div>
