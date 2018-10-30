@@ -43,17 +43,25 @@ def main():
 def page_not_found(e):
     return "Ошибка, ошибка!!! <hr> {} <hr> <a href='{}'><h1>Back to main</h1>".format(e, url_for("main")), 404
 
+# @app.route('/entry', methods=['GET', 'POST'])
+# def entry():
+#     return render_template('entry.html')
+
+# @app.route("/klientdata", methods=['GET','POST'])
+# def get_user_data():
+#     data = read_json("data.json")
+#     if request.method == 'POST':
+#         if not get_check_psw():
+#             return redirect(url_for('entry'))
+#     return render_template("entry.html", data=data)
+
 @app.route('/entry', methods=['GET', 'POST'])
 def entry():
-    return render_template('entry.html')
-
-@app.route("/klientdata", methods=['GET','POST'])
-def get_user_data():
-    data = read_json("data.json")
+    data = []
     if request.method == 'POST':
-        if not get_check_psw():
-            return redirect(url_for('entry'))
-    return render_template("user_data.html", data=data)
+        if get_check_psw():
+            data = read_json('data.json')
+    return render_template('entry.html', data=data)
 
 
 if __name__ == '__main__':

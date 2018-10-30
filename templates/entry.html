@@ -9,14 +9,53 @@
 </head>
 <body>
     <div class="w3-container w3-center" style="margin-top:200px;">
-       <form class="w3-form" action="/klientdata" method="post">
+       <form class="w3-form" action="/entry" method="post">
             <input type="password" name="psw" class="w3-pale-blue"/>
             <input type="submit" value="Войти" class="w3-button w3-pink"/>
         </form>
     </div>
     
-    <div class="w3-panel">
-        <p>{{ text }}</p>
+    <div class="w3-container">
+        {% for user in data %}
+        <table class="w3-table-all w3-card-4 w3-center" style="margin-top:40px;
+                            margin-left:50px;width:90%">
+            <tr>
+                <th>Поле формы</th>
+                <th>Что получено</th>
+            </tr>
+            <tr>
+                <td>Дата</td>
+                <td>{{ user["current"] }}</td>
+            </tr>
+            <tr>
+                <td>Имя</td>
+                <td>{{ user["name"] }}</td>
+            </tr>
+            <tr>
+                <td>Порода</td>
+                <td>{{ user["dog"] }}</td>
+            </tr>
+            <tr>
+                <td>Эмаил</td>
+                <td>{{ user["email"] }}</td>
+            </tr>
+            <tr>
+                <td>Телефон</td>
+                <td>{{ user["phone"] }}</td>
+            </tr>
+            <tr>
+                <td>Сообщение</td>
+                <td>{{ user["msg"] }}</td>
+            </tr>
+        </table>
+        
+        {% endfor %}
     </div>
+    
+    <div class="w3-container w3-blue" style="margin-top:50px">
+        <h2>it will be menu in this place, capable.</h2>
+        <p class="w3-center"><a href="{{url_for('main')}}" class="w3-button w3-red">Вернуться на сайт</a></p>
+    </div>
+    
 </body>
 </html>
