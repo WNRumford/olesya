@@ -13,14 +13,16 @@
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 <body>
 
-	<header class="header w3-cell-row w3-border-bottom">
-		<div class="w3-container w3-cell w3-cell-middle w3-mobile w3-center">
-			<img src="static/images/logo1.jpg" alt="Logo" class="" style="width:60%; padding: 5px;">
+	<header class="w3-container header w3-cell-row w3-border-bottom">
+		<div class="w3-container w3-cell w3-mobile w3-center" style="">
+			<img src="static/images/logo1.jpg" alt="Logo" class="w3-left" style="width:35%; margin: 5px;">
+			<p class="w3-text-white w3-xxlarge w3-center"><b>Адрес: г.Бобруйск Пр-т Строителей 60, к.3 кв 129 
+			Ежедневно 9:00 - 20:00</b></p>
 		</div>
 
-		<div class="w3-container w3-cell w3-cell-middle w3-text-white w3-xlarge w3-mobile" style="width: 40%;">
-			Адрес: г.Бобруйск Пр-т Строителей 60, к.3 кв 129 
-			Ежедневно 9:00 - 20:00  
+		<div class="w3-container w3-cell w3-cell-middle w3-text-white w3-xxlarge w3-mobile" style="width: 40%;">
+			<!--Адрес: г.Бобруйск Пр-т Строителей 60, к.3 кв 129 -->
+			<!--Ежедневно 9:00 - 20:00  -->
 		</div>
 
 		<div class="w3-container w3-cell w3-cell-middle w3-mobile">
@@ -51,7 +53,7 @@
 	<!-- menu -->
 	<div class="w3-card" id="navbar">
 		<div class="w3-bar w3-card w3-padding-small">
-			<div class="w3-bar-item"><a href="tel:+375 29 842-31-62"><i class="fa fa-phone w3-bar-item w3-large w3-button w3-round-large w3-teal w3-ripple"></i></a><span class="w3-margin tel">+375 29 842-31-62</span></div>
+			<div class="w3-bar-item"><a href="tel:+375 29 842-31-62"><i class="fa fa-phone w3-bar-item w3-large w3-button w3-round-large w3-teal w3-ripple"></i></a><span class="w3-margin w3-xlarge tel">+375 29 842-31-62</span></div>
 			<div class="w3-right w3-border">
 				<a href="#about" class="w3-bar-item w3-button w3-mobile w3-hide-small">Обо мне</a>
 				<a href="#prices" class="w3-bar-item w3-button w3-mobile w3-hide-small">Цены</a>
@@ -112,55 +114,57 @@
 <div class="w3-content w3-justify" style="max-width:800px">
 	<div class="w3-row-padding" style="margin:0 -16px">
 
-	  <div class="w3-col s3">
-	    <img src="static/images/sert1.jpg" style="width:100%;cursor:zoom-in"
-	    	class="w3-hover-shadow" onclick="document.getElementById('sert1').style.display='block'">
+	
+	  <div class="w3-col s6 l6 m6">
+	    <img src="static/images/sert1.jpg" style="width:100%; margin:8px;"
+	    	class="w3-hover-shadow">
 	  </div>
 
-	  <div class="w3-col s3">
-	    <img src="static/images/sert2.jpg" style="width:100%;cursor:zoom-in"
-	    	class="w3-hover-shadow" onclick="document.getElementById('sert2').style.display='block'">
+	  <div class="w3-col s6 l6 m6">
+	    <img src="static/images/sert2.jpg" style="width:100%; margin:8px;" 
+	    	class="w3-hover-shadow">
+	  </div>
+	
+	  <div class="w3-col s6 l6 m6">
+	    <img src="static/images/sert3.jpg" style="width:100%; margin:8px;"
+	    	class="w3-hover-shadow">
 	  </div>
 
-	  <div class="w3-col s3">
-	    <img src="static/images/sert3.jpg" style="width:100%;cursor:zoom-in"
-	    	class="w3-hover-shadow" onclick="document.getElementById('sert3').style.display='block'">
+	  <div class="w3-col s6 l6 m6">
+	    <img src="static/images/sert4.jpg" style="width:100%; margin:8px;"
+	    	class="w3-hover-shadow">
 	  </div>
-
-	  <div class="w3-col s3">
-	    <img src="static/images/sert4.jpg" style="width:100%;cursor:zoom-in"
-	    	class="w3-hover-shadow" onclick="document.getElementById('sert4').style.display='block'">
-	  </div>
+	
 	</div>
 
 <!-- modal -->
-	<div id="sert1" class="w3-modal" onclick="this.style.display='none'">
-		<span class="w3-button w3-hover-blue w3-xlarge w3-display-topright">&times;</span>
-		<div class="w3-modal-content w3-animate-zoom">
-      		<img src="static/images/sert1.jpg" style="width:80%">
-    	</div>
-	</div>
+	<!--<div id="sert1" class="w3-modal" onclick="this.style.display='none'">-->
+	<!--	<span class="w3-button w3-hover-blue w3-xlarge w3-display-topright">&times;</span>-->
+	<!--	<div class="w3-modal-content w3-animate-zoom">-->
+ <!--     		<img src="static/images/sert1.jpg" style="width:80%">-->
+ <!--   	</div>-->
+	<!--</div>-->
 
-	<div id="sert2" class="w3-modal" onclick="this.style.display='none'">
-		<span class="w3-button w3-hover-blue w3-xlarge w3-display-topright">&times;</span>
-		<div class="w3-modal-content w3-animate-zoom">
-      		<img src="static/images/sert2.jpg" style="width:80%">
-   		</div>
-	</div>
+	<!--<div id="sert2" class="w3-modal" onclick="this.style.display='none'">-->
+	<!--	<span class="w3-button w3-hover-blue w3-xlarge w3-display-topright">&times;</span>-->
+	<!--	<div class="w3-modal-content w3-animate-zoom">-->
+ <!--     		<img src="static/images/sert2.jpg" style="width:80%">-->
+ <!--  		</div>-->
+	<!--</div>-->
 
-	<div id="sert3" class="w3-modal" onclick="this.style.display='none'">
-		<span class="w3-button w3-hover-blue w3-xlarge w3-display-topright">&times;</span>
-		<div class="w3-modal-content w3-animate-zoom">
-      		<img src="static/images/sert3.jpg" style="width:80%">
-    	</div>
-	</div>
+	<!--<div id="sert3" class="w3-modal" onclick="this.style.display='none'">-->
+	<!--	<span class="w3-button w3-hover-blue w3-xlarge w3-display-topright">&times;</span>-->
+	<!--	<div class="w3-modal-content w3-animate-zoom">-->
+ <!--     		<img src="static/images/sert3.jpg" style="width:80%">-->
+ <!--   	</div>-->
+	<!--</div>-->
 
-	<div id="sert4" class="w3-modal" onclick="this.style.display='none'">
-		<span class="w3-button w3-hover-blue w3-xlarge w3-display-topright">&times;</span>
-		<div class="w3-modal-content w3-animate-zoom">
-      		<img src="static/images/sert4.jpg" style="width:80%">
-    	</div>
-	</div>
+	<!--<div id="sert4" class="w3-modal" onclick="this.style.display='none'">-->
+	<!--	<span class="w3-button w3-hover-blue w3-xlarge w3-display-topright">&times;</span>-->
+	<!--	<div class="w3-modal-content w3-animate-zoom">-->
+ <!--     		<img src="static/images/sert4.jpg" style="width:80%">-->
+ <!--   	</div>-->
+	<!--</div>-->
 </div>
 
 	<!-- end about -->
