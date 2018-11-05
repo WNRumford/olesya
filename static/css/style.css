@@ -1,5 +1,5 @@
-body,h1,h2,h3,h4,h5,h6 {
-	font-family: "Raleway", sans-serif;
+body,h1,h2,h3,h4,h5,h6,p {
+	font-family: 'Geneva', Arial, Helvetica, sans-serif;
 }
 
 body, html {
@@ -46,7 +46,7 @@ body, html {
 }
 
 .otbivka {
-	width: 5%;
+	width: 7%;
 }
 
 .block {
@@ -134,8 +134,8 @@ body, html {
 
 .outbd {
 	border-bottom: 16px solid #50b9b4;
-	margin-top: 40px;
-	margin-bottom: 0px;
+	/*margin-top: 0px;*/
+	/*margin-bottom: 0px;*/
 }
 
 .insidebd {
