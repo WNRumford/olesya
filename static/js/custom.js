@@ -1,5 +1,5 @@
 // slider
-w3.slideshow(".dogimg", 3000);
+w3.slideshow(".slideabs", 3000);
 
 // mobile menu
 function myMobileMenu() {
