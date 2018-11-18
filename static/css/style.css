@@ -145,3 +145,8 @@ body, html {
 .sl{
 	background-color: #a21a5c;
 }
+
+.imgabout{
+	float: left;
+	margin: 10px 10px 5px 0; 
+}

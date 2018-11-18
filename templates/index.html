@@ -16,7 +16,7 @@
 	<header class="w3-container header w3-cell-row w3-border-bottom">
 		<div class="w3-container w3-cell w3-mobile w3-center">
 			<img src="static/images/logo1.jpg" alt="Logo" class="w3-left" style="width:40%; margin: 5px;">
-			<p class="w3-text-white w3-xlarge w3-center"><b>Адрес: г.Бобруйск Пр-т Строителей 60, к.3 кв 129 
+			<p class="adrres w3-text-white w3-xlarge w3-center"><b>Адрес: г.Бобруйск Пр-т Строителей 60, к.3 кв 129 
 			Ежедневно 9:00 - 20:00</b></p>
 		</div>
 
@@ -104,9 +104,10 @@
 
 <div class="w3-container w3-center w3-padding-32">
     <h3 style="color:#a21a5c"><b>Обо мне</b></h3>
-    <img src="static/images/sofa.jpg" alt="Me" class="w3-round-large w3-image w3-padding-32" width="300" height="650">
+    <!--<img src="static/images/sofa.jpg" alt="Me" class="w3-round-large w3-image w3-padding-32" width="300" height="650">-->
 	<div class="w3-content w3-justify" style="max-width:800px">
 	      <h3 class="w3-center" style="color:#a21a5c"><b>ВАШ МАСТЕР – ШУМСКАЯ ОЛЕСЯ ВЛАДИМИРОВНА (грумер-универсал)</b></h3>
+	     	<img src="static/images/sofa.jpg" alt="Me" class="imgabout w3-round-large w3-image" width="300" height="650">
 	     <p class="w3-large">
 	Груминг – это не роскошь, а необходимость, если Вы хотите, чтобы Ваш питомец был всегда красивым.</p>
 	<p class="w3-large">
@@ -158,31 +159,31 @@
 	</div>
 	<!--Gallery-->
 	<div class="w3-container w3-padding w3-center" style="background-color:#50b9b4">
-		 <h3 style="color:#a21a5c"><b>Галлерея моих работ</b></h3>
+		 <h3 style="color:#a21a5c"><b>ГАЛЛЕРЕЯ МОИХ РАБОТ</b></h3>
 		<div class="w3-row-padding" style="background-color:#50b9b4">
 
 			<!-- decor -->
-			<div class="w3-col s3">
+			<div class="w3-col s6">
 				<img src="static/images/dec1.jpg" name="decor" alt="decor" style="width:100%;cursor:pointer" onclick="openModalDecor();currentDivDecor(1)" class="w3-image w3-hover-shadow">
-				<label for="decor">Декоративные породы</label>
+				<label for="decor"><b> Декоративные породы</b></label>
 			</div>
 			
 			<!-- mid -->
-			<div class="w3-col s3">
+			<div class="w3-col s6">
 				<img src="static/images/mid1.jpg" name="middle" alt="Mid" style="width:100%;cursor:pointer" onclick="openModalMid();currentDivMid(1)" class="w3-image w3-hover-shadow">
-				<label for="middle">Средние породы</label>
+				<label for="middle"><b> Средние породы</b></label>
 			</div>
 			
 			<!--met-->
-			<div class="w3-col s3">
+			<div class="w3-col s6">
 				<img src="static/images/met1.jpg" name="metis" alt="decor" style="width:100%;cursor:pointer" onclick="openModalMet();currentDivMet(1)" class="w3-image w3-hover-shadow">
-				<label for="metis">Метисы</label>
+				<label for="metis"><b>Метисы</b></label>
 			</div>
 			
 			<!--trim-->
-			<div class="w3-col s3">
+			<div class="w3-col s6">
 				<img src="static/images/trim1.jpg" name="trimm" alt="decor" style="width:100%;cursor:pointer" onclick="openModalTrim();currentDivTrim(1)" class="w3-image w3-hover-shadow">
-				<label for="trimm">Триммингующие породы</label>
+				<label for="trimm"><b>Триммингующие породы</b></label>
 			</div>
 		</div>
 	</div>
@@ -312,7 +313,7 @@
 	<div class="w3-container w3-center block" style="margin-top: 30px;">
 		<img src="static/images/otbivka2.jpg" alt="otbivka" class="otbivka w3-image">
 		<div class="w3-panel">
-			<p><strong class="w3-xlarge txt">Полный комплекс услуг для собак</strong></p>
+			<p><strong class="w3-xlarge txt">ПОЛНЫЙ КОМПЛЕКС УСЛУГ ДЛЯ СОБАК</strong></p>
 		</div>
 	</div>
 	<hr>
@@ -373,7 +374,7 @@
 		<div class="insidebd"></div>	
 	</div>
 	<div class="w3-container w3-center" style="background-color: #50b9b4;">
-		<img src="static/images/otbivka3.jpg" class="otbivka w3-image">
+		<img src="static/images/koshel.jpg" class="otbivka w3-image">
 		<div class="w3-panel" style="color: white;"><b class="w3-xlarge">ЦЕНЫ НА УСЛУГИ</b></div>
 	<!--</div>-->
 
@@ -701,15 +702,15 @@
 	<div class="w3-container w3-center w3-mobile w3-responsive w3-grey">
 		<div class="w3-panel" style="color: #a21a5c;"><b class="w3-xlarge">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</b></div>
 		
-		<div onclick="faq('qone')" class="w3-button w3-border w3-block w3-left-align w3-light-grey "><i class="material-icons w3-margin-right">live_help</i><b class="faq w3-large">Сколько длится стрижка? Я успею съездить по делам?</b></div>
+		<div onclick="faq('qone')" class="w3-button w3-border w3-block w3-left-align w3-light-grey w3-hover-white"><i class="material-icons w3-margin-right">live_help</i><b class="faq w3-large">Сколько длится стрижка? Я успею съездить по делам?</b></div>
 		<div class="w3-container w3-light-grey w3-hide" id="qone"><blockquote class="w3-panel w3-leftbar w3-light-grey"><i>Комплекс процедур (купание, стрижка, сушка, чистка глаз и ушей, подстригание когтей) длится от 1 часа до 1,5 часов.
 		Конечно, Вы можете уехать по делам. Ничего страшного, если опоздаете: Ваш пушистый друг подождет Вас в салоне, в отдельном помещении, мы за ним присмотрим!</i></blockquote></div>
 		
-		<div onclick="faq('qtwo')" class="w3-button w3-border w3-block w3-left-align w3-light-grey "><i class="material-icons w3-margin-right">live_help</i><b class="faq w3-large">Может быть удобнее вызвать мастера на дом?</b></div>
+		<div onclick="faq('qtwo')" class="w3-button w3-border w3-block w3-left-align w3-light-grey w3-hover-white"><i class="material-icons w3-margin-right">live_help</i><b class="faq w3-large">Может быть удобнее вызвать мастера на дом?</b></div>
 		<div class="w3-container w3-light-grey w3-hide" id="qtwo"><blockquote class="w3-panel w3-leftbar w3-light-grey"><i>Это может негативно сказаться на психологическом состоянии животного. Есть риск, что Ваш любимец потеряет ощущение «мой дом – моя крепость», начнет бояться гостей, испытывать недовольство, что его личное пространство 
 		нарушили… Опыт показал – дома собаки и кошки волнуются больше, чем в салоне. Кроме того, профессиональные грумеры в принципе не выезжают на дом, так как им требуются специальные приспособления и инструменты.</i></blockquote></div>
 
-		<div onclick="faq('qthree')" class="w3-button w3-border w3-block w3-left-align w3-light-grey w3-left-align"><i class="material-icons w3-margin-right">live_help</i><b class="faq w3-large">Вдруг собака начнет нервничать. Надо ли мне ее держать?</b></div>
+		<div onclick="faq('qthree')" class="w3-button w3-border w3-block w3-left-align w3-light-grey w3-hover-white w3-left-align"><i class="material-icons w3-margin-right">live_help</i><b class="faq w3-large">Вдруг собака начнет нервничать. Надо ли мне ее держать?</b></div>
 		<div class="w3-container w3-light-grey w3-hide" id="qthree"><blockquote class="w3-panel w3-leftbar w3-light-grey"><i>Если у Вас собака – лучше подождите в другом помещении, мы справимся сами. Собаки спокойнее себя ведут без присутствия хозяина. Не переживайте, мы найдем подход к Вашему питомцу, успокоим его, угостим вкусным снеком!</i></blockquote ></div>
 	</div>
 	<!-- end FAQ -->
