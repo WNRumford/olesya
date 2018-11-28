@@ -142,11 +142,15 @@ body, html {
 	border-bottom: 8px solid #a21a5c;
 }
 
-.sl{
-	background-color: #a21a5c;
-}
+/*.sl{*/
+/*	background-color: #a21a5c;*/
+/*}*/
 
 .imgabout{
 	float: left;
-	margin: 10px 10px 5px 0; 
+	margin: 10px 20px 5px 0; 
+}
+
+.slideabs {
+	color: #50b9b4;
 }
