@@ -31,7 +31,7 @@ function faq(id) {
 
 // ENDGallery
 
-// STICKY NAVBAR
+// STICKY NAVBAR and button top
 
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function(){stickyNavbar()};
@@ -44,10 +44,18 @@ var sticky = navbar.offsetTop;
 // Remove "sticky" when you leave the scroll position
 function stickyNavbar(){
   if (window.pageYOffset >= sticky){
-   navbar.classList.add("stickyy") 
+   navbar.classList.add("stickyy");
+   document.getElementById("btop").style.display = "block";
   } else {
     navbar.classList.remove("stickyy");
+    document.getElementById("btop").style.display = "none";
   }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 // END STICKY NAVBAR
 
