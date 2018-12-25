@@ -179,3 +179,12 @@ body, html {
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
 }
+
+.adven {
+	min-height: 185px;
+}
+
+.advtxt {
+	color: #a21a5c;
+	min-height: 100px;
+}
