@@ -7,10 +7,11 @@ host = os.getenv('IP', '0,0,0,0')
 port = int(os.getenv('PORT', 8080))
 
 app = Flask(__name__)
-mail = Mail(app)
+# mail = Mail(app)
 # Конфиги для почты
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
+# app.config['MAIL_PORT'] = 534
 app.config['MAIL_USERNAME'] = 'shumskayaolesya59@gmail.com'
 app.config['MAIL_PASSWORD'] = 'qwaqwa123'
 app.config['MAIL_DEFAULT_SENDER'] = 'shumskayaolesya59@gmail.com'
