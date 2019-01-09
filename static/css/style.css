@@ -47,6 +47,7 @@ body, html {
 
 .otbivka {
 	width: 7%;
+	margin-top: 30px;
 }
 
 .block {
@@ -187,4 +188,8 @@ body, html {
 .advtxt {
 	color: #a21a5c;
 	min-height: 100px;
+}
+
+#footer > * p {
+	font-size: 10px;
 }
