@@ -183,11 +183,11 @@ body, html {
 
 .adven {
 	min-height: 185px;
+	width: 50%;
 }
 
 .advtxt {
 	color: #a21a5c;
-	min-height: 100px;
 }
 
 #footer > * p {
