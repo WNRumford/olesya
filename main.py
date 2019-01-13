@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, url_for, redirect
 from funcs import get_data_form, write_json, read_json, get_check_psw, letter
 import os
 from flask_mail import Mail, Message
+from faq import faq
 
 host = os.getenv('IP', '0,0,0,0')
 port = int(os.getenv('PORT', 8080))
@@ -37,7 +38,7 @@ def main():
         msg = Message('Письмо с сайта', recipients = ['shumskayaolesya59@gmail.com'])
         msg.body = letter(data)
         mail.send(msg)
-    return render_template('index.html')
+    return render_template('index.html', faq=faq)
 
 
 @app.errorhandler(404)
