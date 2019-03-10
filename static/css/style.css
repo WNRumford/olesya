@@ -193,3 +193,8 @@ body, html {
 #footer > * p {
 	font-size: 10px;
 }
+
+.otstup{
+	text-indent: 16px;
+	/*text-align: justify;*/
+}
